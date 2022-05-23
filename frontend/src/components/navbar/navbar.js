@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-// const vert_align = {
-//     display: 'flex',
-//     flexDirection: 'column'
-// }
-// <div id='fixed-top" style={vert_align} fixed='top'>
-//     <HeaderComponent />
-//     <TabComponent />
-// </div>
 export class Navbar extends Component {
     render() {
         return (
@@ -34,35 +27,37 @@ export class Navbar extends Component {
                                         <img class="block lg:hidden h-8 w-auto" src="/images/Ocademy logo.svg" alt="Ocademy" />
                                         <img class="hidden lg:block h-8 w-auto" src="/images/Ocademy logo.svg" alt="Ocademy" />
                                     </a>
-                                    <img class="hidden lg:block h-5 w-auto px-3" src="/images/Ocademy.svg" alt="Ocademy text" />
+                                    <a href="/">
+                                        <img class="hidden lg:block h-5 w-auto px-3" src="/images/Ocademy.svg" alt="Ocademy text" />
+                                    </a>
                                 </div>
                             </div>
-
                             <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <div class="hidden sm:block sm:ml-6">
                                     <div class="flex space-x-4 text-text-navbar">
-                                        <a href="/" class="hover:text-oren px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Beranda</a>
-                                        <a href="/" class="hover:text-oren px-3 py-2 rounded-md text-sm font-medium">Tentang Ocademy</a>
-                                        <a href="/" class="hover:text-oren px-3 py-2 rounded-md text-sm font-medium">Produk</a>
-                                        <a href="/" class="hover:text-oren px-3 py-2 rounded-md text-sm font-medium">Karir</a>
-                                        <button type="button" class="bg-oren px-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                                            <p class="px-2 text-white">Login/Register</p>
-                                        </button>
+                                        <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Beranda</Link>
+                                        <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Tentang Ocademy</Link>
+                                        <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Produk</Link>
+                                        <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Karir</Link>
+                                        
+                                        <Link to="/register" class="px-3 py-2 text-sm font-medium">
+                                            <button type="button" class="h-6 bg-oren px-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                                                <p class="px-4 text-white">Login/Register</p>
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    
                     <div class="sm:hidden" id="mobile-menu">
                         <div class="px-2 pt-2 pb-3 space-y-1 text-text-navbar">
-                            <a href="/" class="hover:text-oren block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Beranda</a>
-                            <a href="/" class="hover:text-oren block px-3 py-2 rounded-md text-base font-medium">Tentang Ocademy</a>
-                            <a href="/" class="hover:text-oren block px-3 py-2 rounded-md text-base font-medium">Produk</a>
-                            <a href="/" class="hover:text-oren block px-3 py-2 rounded-md text-base font-medium">Karir</a>
+                            <a href="/" class="hover:text-oren block px-3 py-2 text-base font-medium" aria-current="page">Beranda</a>
+                            <a href="/" class="hover:text-oren block px-3 py-2 text-base font-medium">Tentang Ocademy</a>
+                            <a href="/" class="hover:text-oren block px-3 py-2 text-base font-medium">Produk</a>
+                            <a href="/" class="hover:text-oren block px-3 py-2 text-base font-medium">Karir</a>
                             <button type="button" class="w-full bg-oren rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                                <p class="px-2 text-white">Login/Register</p>
+                                <p class="px-4 text-white">Login/Register</p>
                             </button>
                         </div>
                     </div>
