@@ -36,9 +36,9 @@ export class Navbar extends Component {
                                 <div class="hidden sm:block sm:ml-6">
                                     <div class="flex space-x-4 text-text-navbar">
                                         <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Beranda</Link>
-                                        <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Tentang Ocademy</Link>
+                                        <Link to="/about" class="hover:text-oren px-3 py-2 text-sm font-medium">Tentang Ocademy</Link>
                                         <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Produk</Link>
-                                        <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Karir</Link>
+                                        <Link to="/karir" class="hover:text-oren px-3 py-2 text-sm font-medium">Karir</Link>
                                         
                                         <Link to="/register" class="px-3 py-2 text-sm font-medium">
                                             <button type="button" class="h-6 bg-oren px-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -53,12 +53,14 @@ export class Navbar extends Component {
                     <div class="sm:hidden" id="mobile-menu">
                         <div class="px-2 pt-2 pb-3 space-y-1 text-text-navbar">
                             <a href="/" class="hover:text-oren block px-3 py-2 text-base font-medium" aria-current="page">Beranda</a>
-                            <a href="/" class="hover:text-oren block px-3 py-2 text-base font-medium">Tentang Ocademy</a>
+                            <a href="/about" class="hover:text-oren block px-3 py-2 text-base font-medium">Tentang Ocademy</a>
                             <a href="/" class="hover:text-oren block px-3 py-2 text-base font-medium">Produk</a>
-                            <a href="/" class="hover:text-oren block px-3 py-2 text-base font-medium">Karir</a>
-                            <button type="button" class="w-full bg-oren rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                                <p class="px-4 text-white">Login/Register</p>
-                            </button>
+                            <a href="/karir" class="hover:text-oren block px-3 py-2 text-base font-medium">Karir</a>
+                            <Link to="/register" class="px-3 py-2 text-sm font-medium">
+                                <button type="button" class="w-full bg-oren rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                                    <p class="px-4 text-white">Login/Register</p>
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </nav>
