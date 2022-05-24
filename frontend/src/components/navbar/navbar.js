@@ -37,7 +37,8 @@ export class Navbar extends Component {
                                     <div class="flex space-x-4 text-text-navbar">
                                         <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Beranda</Link>
                                         <Link to="/about" class="hover:text-oren px-3 py-2 text-sm font-medium">Tentang Ocademy</Link>
-                                        <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Produk</Link>
+                                        <Link to="/produk/sbmptn" class="hover:text-oren px-3 py-2 text-sm font-medium">Produk SBMPTN</Link>
+                                        <Link to="/produk/ksn" class="hover:text-oren px-3 py-2 text-sm font-medium">Produk KSN</Link>
                                         <Link to="/karir" class="hover:text-oren px-3 py-2 text-sm font-medium">Karir</Link>
                                         
                                         <Link to="/register" class="px-3 py-2 text-sm font-medium">
