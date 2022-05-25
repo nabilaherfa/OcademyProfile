@@ -1,73 +1,113 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { ChevronDownIcon } from '@heroicons/react/solid'
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 
 export class Navbar extends Component {
     render() {
         return (
-            <>  
-                <nav class="sticky top-0 bg-white drop-shadow-xl">
-                    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                        <div class="relative flex items-center justify-between h-16">
-                            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                                    <span class="sr-only">Open main menu</span>
-                                    
-                                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                                    </svg>
-                                    
-                                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
+            <div className='font-roboto text-navbar text-xl sticky top-0 bg-white drop-shadow-xl'>
+                <Popover>
+                    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                        <div className="flex items-center justify-between h-20 md:justify-start md:space-x-10">
+                            <div className="flex justify-start lg:w-0 lg:flex-1">
+                                <a href="/"><img className="px-2" src="/images/logo.svg" alt="Ocademy Logo"/></a>
                             </div>
-                            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                                <div class="flex-shrink-0 flex items-center">
-                                    <a href="/">
-                                        <img class="block lg:hidden h-8 w-auto" src="/images/Ocademy logo.svg" alt="Ocademy" />
-                                        <img class="hidden lg:block h-8 w-auto" src="/images/Ocademy logo.svg" alt="Ocademy" />
-                                    </a>
-                                    <a href="/">
-                                        <img class="hidden lg:block h-5 w-auto px-3" src="/images/Ocademy.svg" alt="Ocademy text" />
-                                    </a>
-                                </div>
+
+                            <div className="-mr-2 -my-2 md:hidden">
+                                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center hover:text-oren3 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset">
+                                    <span className="sr-only">Open menu</span>
+                                    <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                                </Popover.Button>
                             </div>
-                            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                                <div class="hidden sm:block sm:ml-6">
-                                    <div class="flex space-x-4 text-text-navbar">
-                                        <Link to="/" class="hover:text-oren px-3 py-2 text-sm font-medium">Beranda</Link>
-                                        <Link to="/about" class="hover:text-oren px-3 py-2 text-sm font-medium">Tentang Ocademy</Link>
-                                        <Link to="/produk/sbmptn" class="hover:text-oren px-3 py-2 text-sm font-medium">Produk SBMPTN</Link>
-                                        <Link to="/produk/ksn" class="hover:text-oren px-3 py-2 text-sm font-medium">Produk KSN</Link>
-                                        <Link to="/karir" class="hover:text-oren px-3 py-2 text-sm font-medium">Karir</Link>
-                                        
-                                        <Link to="/register" class="px-3 py-2 text-sm font-medium">
-                                            <button type="button" class="h-6 bg-oren px-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                                                <p class="px-4 text-white">Login/Register</p>
-                                            </button>
-                                        </Link>
+
+                            <Popover.Group as="nav" className="flex justify-end hidden md:flex space-x-10 ">
+                                <a href="/" className="hover:text-oren3">Beranda</a>
+                                <a href="/about" className="hover:text-oren3">Tentang Ocademy</a>
+                                <Popover className="relative">
+                                    {({ open }) => (
+                                        <>
+                                            <Popover.Button className={classNames(open, 'group inline-flex items-center hover:text-oren3' )}>
+                                                <span>Produk</span>
+                                                <ChevronDownIcon className={classNames(open, 'ml-2 h-5 w-5 group-hover:text-oren3' )} aria-hidden="true" />
+                                            </Popover.Button>
+                                            
+                                            <Transition as={Fragment} enter="transition ease-out duration-200" enterFrom="opacity-0 translate-y-1" enterTo="opacity-100 translate-y-0" leave="transition ease-in duration-150" leaveFrom="opacity-100 translate-y-0" leaveTo="opacity-0 translate-y-1" >
+                                                <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-max sm:px-0 lg:ml-0 lg:-translate-x-1/2">
+                                                    <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                                        <div className="relative grid gap-6 bg-white py-6 sm:gap-8 sm:p-8">
+                                                            <a href="/produk-SBMPTN" className="-m-2 p-3 flex items-start rounded-lg hover:bg-gray-50" >
+                                                                <p className="hover:text-oren3">Pelatihan SBMPTN</p>
+                                                            </a>
+                                                            <a href="/produk-KSN" className="-m-2 p-3 flex items-start rounded-lg hover:bg-gray-50" >
+                                                                <p className="hover:text-oren3">Pelatihan KSN</p>
+                                                            </a>  
+                                                        </div>
+                                                    </div>
+                                                </Popover.Panel>
+                                            </Transition>
+                                        </>
+                                    )}
+                                </Popover>
+                                <a href="/karir" className="hover:text-oren3">Karir</a>
+                            </Popover.Group>
+                            
+                            <div className="hidden md:flex items-center justify-end">
+                                <a href="/register" className="p-1 px-5 rounded-full text-lg text-white bg-oren3 hover:bg-yellow-700">Login/Register</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <Transition as={Fragment} enter="duration-200 ease-out" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="duration-100 ease-in" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95" >
+                        <Popover.Panel focus className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                            <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                                <div className="pt-5 pb-6 px-5">
+                                    <div className="flex items-center justify-between">
+                                        <a href="/">
+                                            <img className="h-8 w-auto sm:h-10 float-left px-2" src="/images/logo.svg" alt="Ocademy Logo"/>
+                                        </a>
+                                        <div className="-mr-2">
+                                            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center hover:text-oren3 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                                <span className="sr-only">Close menu</span>
+                                                <XIcon className="h-6 w-6" aria-hidden="true" />
+                                            </Popover.Button>
+                                        </div>
+                                    </div>
+                                    <div className="mt-6">
+                                        <nav className="grid gap-y-8">
+                                            <a href="/" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
+                                                <span className="ml-3 text-base hover:text-oren3">Beranda</span>
+                                            </a>
+                                            <a href="/about" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
+                                                <span className="ml-3 text-base hover:text-oren3">Tentang Ocademy</span>
+                                            </a>
+                                            <a href="/produk-SBMPTN" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
+                                                <span className="ml-3 text-base hover:text-oren3">Pelatihan SBMPTN</span>
+                                            </a>
+                                            <a href="/produk-KSN" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
+                                                <span className="ml-3 text-base hover:text-oren3">Pelatihan KSN</span>
+                                            </a>
+                                            <a href="/karir" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
+                                                <span className="ml-3 text-base hover:text-oren3">Karir</span>
+                                            </a>
+                                        </nav>
                                     </div>
                                 </div>
+
+                                <div className="py-6 px-5 space-y-6">
+                                    <a href="/register" className="w-full flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base text-white bg-oren3 hover:bg-yellow-700" >Login/Register</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="sm:hidden" id="mobile-menu">
-                        <div class="px-2 pt-2 pb-3 space-y-1 text-text-navbar">
-                            <a href="/" class="hover:text-oren block px-3 py-2 text-base font-medium" aria-current="page">Beranda</a>
-                            <a href="/about" class="hover:text-oren block px-3 py-2 text-base font-medium">Tentang Ocademy</a>
-                            <a href="/" class="hover:text-oren block px-3 py-2 text-base font-medium">Produk</a>
-                            <a href="/karir" class="hover:text-oren block px-3 py-2 text-base font-medium">Karir</a>
-                            <Link to="/register" class="px-3 py-2 text-sm font-medium">
-                                <button type="button" class="w-full bg-oren rounded-full hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                                    <p class="px-4 text-white">Login/Register</p>
-                                </button>
-                            </Link>
-                        </div>
-                    </div>
-                </nav>
-            </>
-        );
+                        </Popover.Panel>
+                    </Transition>
+                </Popover>
+            </div>
+        );  
     }
 }
-
 export default Navbar;

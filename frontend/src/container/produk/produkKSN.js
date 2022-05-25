@@ -18,6 +18,14 @@ const background2={
     backgroundSize: 'auto',
 };
 
+const background3={
+    backgroundImage: 
+    "url('/images/ksn62.svg')",
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'auto',
+};
+
+
 const background4={
     backgroundImage: 
     "url('/images/ksn72.svg')",
@@ -87,7 +95,7 @@ export class ProdukKSN extends Component {
                         </div>
                     </div>
 
-                    <div style={background2} className='p-20 grid grid-cols-3 text-white'>
+                    <div style={background2} className='p-10 grid grid-cols-3 text-white'>
                         <div class="col-span-2">
                             <h2 className='text-2xl text-right font-bold'>Rangkuman</h2><br />
                             <p className='text-lg text-right lg:pl-80'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed sunt facilis dicta harum sit architecto distinctio, reprehenderit natus corrupti odio, explicabo nesciunt, unde cumque? Quam officiis quisquam odio qui?</p>
@@ -115,12 +123,12 @@ export class ProdukKSN extends Component {
                         </div>
                     </div>
 
-                    <div className='px-10 grid grid-cols-3'>
+                    <div style={background3} className='px-10 grid grid-cols-3'>
                         <div>
                             <img src="/images/ksn61.svg" alt="ksn21" class="float-left py-16 p-32"/>
                         </div>
                         <div class="col-span-2">
-                            <div class="p-10 pb-16 leading-7">
+                            <div class="p-10 leading-7">
                                 <div>
                                     <h2 className='text-2xl font-bold'>PDF Pembahasan</h2><br />
                                     <p className='lg:pr-72'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.  Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam. </p>
@@ -181,21 +189,17 @@ export class ProdukKSN extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className='px-10 pb-20'>
                             <div class="flex py-5 items-center">
                                 <div class="flex-grow border-t border-oren1"></div>
                                 <span class="flex-shrink mx-4 text-oren1 text-3xl font-semibold">Ayo Coba Sekarang</span>
                                 <div class="flex-grow border-t border-oren1"></div>
                             </div>
                             <p className='text-center'>Dapatkan promo terbaik bulan ini hanya<br />dengan XXXX</p>
-                            <Link to="/">
-                                <div className='grid grid-1 lg: grid grid-cols-3'>
-                                    <div></div>
-                                    <button type="button" class="w-40 bg-oren rounded-lg hover:text-white focus:outline-none m-5 mx-auto">
-                                        <p class="text-lg px-4 text-white">Coba Sekarang</p>
-                                    </button>
-                                    <div></div>
-                                </div>
+                            <Link to="/" className='grid justify-items-center'>
+                                <button type="button" class="w-40 bg-oren rounded-lg hover:text-white focus:outline-none m-5 mx-auto">
+                                    <p class="text-lg px-4 text-white">Coba Sekarang</p>
+                                </button>
                             </Link>
                         </div>
                     </div>
