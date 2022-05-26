@@ -125,7 +125,7 @@ export class ProdukKSN extends Component {
 
                     <div style={background3} className='px-10 grid grid-cols-3'>
                         <div>
-                            <img src="/images/ksn61.svg" alt="ksn21" class="float-left py-16 p-32"/>
+                            <img src="/images/ksn61.svg" alt="ksn61" class="float-left py-16 p-32"/>
                         </div>
                         <div class="col-span-2">
                             <div class="p-10 leading-7">
@@ -197,7 +197,7 @@ export class ProdukKSN extends Component {
                             </div>
                             <p className='text-center'>Dapatkan promo terbaik bulan ini hanya<br />dengan XXXX</p>
                             <Link to="/" className='grid justify-items-center'>
-                                <button type="button" class="w-40 bg-oren rounded-lg hover:text-white focus:outline-none m-5 mx-auto">
+                                <button type="button" class="w-40 bg-oren3 rounded-lg hover:text-white focus:outline-none m-5 mx-auto">
                                     <p class="text-lg px-4 text-white">Coba Sekarang</p>
                                 </button>
                             </Link>

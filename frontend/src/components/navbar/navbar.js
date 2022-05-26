@@ -11,7 +11,7 @@ function classNames(...classes) {
 export class Navbar extends Component {
     render() {
         return (
-            <div className='font-roboto text-navbar text-xl sticky top-0 bg-white drop-shadow-xl'>
+            <div className='font-roboto text-navbar text-xl sticky top-0 bg-white drop-shadow-xl z-10'>
                 <Popover>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                         <div className="flex items-center justify-between h-20 md:justify-start md:space-x-10">

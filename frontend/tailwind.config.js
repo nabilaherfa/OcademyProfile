@@ -22,7 +22,7 @@ module.exports = {
       },
       fontFamily: {
         roboto: ["Roboto"],
-        'open-sans': ["Open Sans"]
+        'open-sans': ["./public/font/OpenSans-Regular.ttf"]
       }
     },
   },
