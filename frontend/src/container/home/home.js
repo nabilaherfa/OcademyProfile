@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const background1={
     backgroundImage: 
     "url('/images/home-sec3-1.svg')",
-    backgroundRepeat: 'no-repeat',
+    backgroundRepeat: 'yes',
     backgroundSize: 'auto',
 };
 
@@ -27,13 +27,6 @@ const background3={
 const background4={
     backgroundImage: 
     "url('/images/home-sec5-1.svg')",
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
-};
-
-const background5={
-    backgroundImage: 
-    "url('/images/home-sec2-1.svg')",
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'auto',
 };
@@ -92,29 +85,46 @@ export class Home extends Component {
                     </div>
 
                     <div class="w-auto p-3 lg:p-10 ">
-                        <div style={background5} className="p-4">
-                            <div class="grid grid-1 lg:grid-cols-4">
+                        <div>
+                            <div class="p-12 text-left absolute grid grid-1 md:grid-cols-3 lg:grid-cols-4 text-white">
                                 <div></div>
-                                <div class="text-white text-left col-span-3">
-                                    <h1 class="text-lg py-6 lg:text-2xl font-bold">Ngerasa bingung gimana mulai mempersiapkan belajar buat KSN?</h1>
-                                    <p class="text-xs py-2 lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.  </p>
+                                <div className='col-span-2'>
+                                    <h1 class="text-lg lg:text-2xl font-bold font-open-sans">Ngerasa bingung gimana mulai mempersiapkan belajar buat KSN?</h1>
+                                    <p class="text-xs py-4 lg:text-xl font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.</p>
                                 </div>
                             </div>
+                            <img src="/images/home-sec2-1.svg" alt="sec2-1" className='pt-2 object-cover'/>
                         </div>
-                        {/* <img src="/images/home-sec2-1.svg" alt="sec2-3" className='pt-2 lg:pt-10'/> */}
-                        <img src="/images/home-sec2-2.svg" alt="sec2-2" className='pt-2 lg:pt-10 float-right clear-right'/>
-                        <img src="/images/home-sec2-2.svg" alt="sec2-2" className='pt-2 lg:pt-10 block ml-auto'/>
-                        <img src="/images/home-sec2-3.svg" alt="sec2-3" className='pt-2 lg:pt-10'/>
+                        <div className='pt-10'>
+                            <div class="p-12 text-right absolute grid grid-1 md:grid-cols-3 lg:grid-cols-4 text-white">
+                                <div></div>
+                                <div className='md:col-start-1 md:col-span-2 lg:col-span-2 pr-8'>
+                                    <h1 class="text-lg lg:text-2xl font-bold font-open-sans">Udah naik kelas 12, tapi masih belum persiapan SBMPTN?</h1>
+                                    <p class="text-xs py-4 lg:text-xl font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.</p>
+                                </div>
+                            </div>
+                            <img src="/images/home-sec2-2.svg" alt="sec2-2" className='block ml-auto object-cover'/>
+                        </div>
+                        <div className='pt-10'>
+                            <div class="p-12 text-left absolute grid grid-1 md:grid-cols-3 lg:grid-cols-4 text-white">
+                                <div></div>
+                                <div className='col-span-2'>
+                                    <h1 class="text-lg lg:text-2xl font-bold font-open-sans">Mau persiapan SBMPTN, tapi waktu udah mepet?</h1>
+                                    <p class="text-xs py-4 lg:text-xl font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.</p>
+                                </div>
+                            </div>
+                            <img src="/images/home-sec2-3.svg" alt="sec2-3" className='object-cover'/>
+                        </div>
                     </div>
 
-                    <div class="p-3 lg:pl-28 lg:pr-16  lg:py-16" style={background1}>
+                    <div class="p-3 lg:pl-28 lg:pr-16 lg:py-16" style={background1}>
                         <div className='lg:flex'>
                             <div className='lg:flex-auto lg:w-2/5 mx-2'>
                                 <div>
-                                    <img src="/images/home-sec3-2.svg" alt="sec3-2"/>
+                                    <img src="/images/home-sec3-2.svg" alt="sec3-2" className='mx-auto'/>
                                 </div>
                                 <div className='text-white'>
-                                    <h1 className='text-3xl font-open-sans font-bold lg:pb-6'>Ocademy siap<br /> membantu kamu!</h1>
+                                    <h1 className='text-3xl font-open-sans font-bold lg:pb-6'>Ocademy siap membantu kamu!</h1>
                                     <p className='text-lg font-roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt officiis necessitatibus suscipit molestiae veniam dicta culpa officia nam rerum, alias deleniti unde nulla non ratione accusantium totam veritatis animi?</p>
                                 </div>
                             </div>
@@ -155,19 +165,19 @@ export class Home extends Component {
                     </div>
 
                     <div className='py-16'>
-                        <h1 class="text-center text-4xl font-open-sans text-oren1 font-bold pb-8">Kenapa Harus Ocademy?</h1>
+                        <h1 class="text-center text-4xl font-open-sans text-oren1 font-bold lg:pb-8">Kenapa Harus Ocademy?</h1>
                         <div class="grid grid-1 lg:grid-cols-3 p-5 lg:px-36 text-center lg:text-xl">
-                            <div class="bg-white rounded-lg mx-12 p-4 drop-shadow-xl">
+                            <div class="bg-white rounded-lg mx-12 p-4 drop-shadow-xl my-4">
                                 <img src="/images/home-sec4-1.svg" alt="home-sec4-1" class="mx-auto" />
                                 <h2 class="font-open-sans font-bold text-center"><br />10.000++</h2>
                                 <p className='font-roboto'>Pengguna Ocademy</p>
                             </div>
-                            <div class="bg-white rounded-lg mx-12 p-4 drop-shadow-xl">
+                            <div class="bg-white rounded-lg mx-12 p-4 drop-shadow-xl my-4">
                                 <img src="/images/home-sec4-2.svg" alt="home-sec4-2" class="mx-auto" />
                                 <h2 class="font-open-sans font-bold text-center"><br />Ribuan</h2>
                                 <p className='font-roboto'>Bank soal variative</p>
                             </div>
-                            <div class="bg-white rounded-lg mx-12 p-4 drop-shadow-xl">
+                            <div class="bg-white rounded-lg mx-12 p-4 drop-shadow-xl my-4">
                                 <img src="/images/home-sec4-3.svg" alt="home-sec4-3" class="mx-auto" />
                                 <h2 class="font-open-sans font-bold text-center"><br />Puluhan</h2>
                                 <p className='font-roboto'>Pembuat soal dari PTN ternama Indonesia</p>
