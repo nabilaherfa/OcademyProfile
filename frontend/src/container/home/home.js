@@ -31,6 +31,28 @@ const background4={
     backgroundSize: 'cover',
 };
 
+const background5={
+    backgroundImage: 
+    "url('/images/home-sec2-1.svg')",
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'auto',
+};
+
+const background6={
+    backgroundImage: 
+    "url('/images/home-sec2-3.svg')",
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'auto',
+};
+
+const background7={
+    backgroundImage: 
+    "url('/images/home-sec2-5.svg')",
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'auto',
+};
+
+
 export class Home extends Component {
     render() {
         return (
@@ -85,39 +107,30 @@ export class Home extends Component {
                     </div>
 
                     <div class="w-auto p-3 lg:p-10 ">
-                        <div>
-                            <div class="p-12 text-left absolute grid grid-1 md:grid-cols-3 lg:grid-cols-4 text-white">
-                                <div></div>
-                                <div className='col-span-2'>
-                                    <h1 class="text-lg lg:text-2xl font-bold font-open-sans">Ngerasa bingung gimana mulai mempersiapkan belajar buat KSN?</h1>
-                                    <p class="text-xs py-4 lg:text-xl font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.</p>
-                                </div>
+                        <div style={background5} className="p-9 md:flex md:justify-start lg:flex lg:justify-start md:pr-40 lg:pr-48">
+                            <img src="/images/home-sec2-2.svg" alt="sec2-1" className='w-1/3 mx-auto'/>
+                            <div className='my-auto md:mx-10 lg:mx-12 text-white'>
+                                <h1 class="text-sm md:text-xl lg:text-2xl font-bold font-open-sans">Ngerasa bingung gimana mulai mempersiapkan belajar buat KSN?</h1>
+                                <p class="text-xs py-4 md:text-base lg:text-xl font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.</p>
                             </div>
-                            <img src="/images/home-sec2-1.svg" alt="sec2-1" className='pt-2 object-cover'/>
                         </div>
-                        <div className='pt-10'>
-                            <div class="p-12 text-right absolute grid grid-1 md:grid-cols-3 lg:grid-cols-4 text-white">
-                                <div></div>
-                                <div className='md:col-start-1 md:col-span-2 lg:col-span-2 pr-8'>
-                                    <h1 class="text-lg lg:text-2xl font-bold font-open-sans">Udah naik kelas 12, tapi masih belum persiapan SBMPTN?</h1>
-                                    <p class="text-xs py-4 lg:text-xl font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.</p>
-                                </div>
+                        <div style={background6} className="p-9 mt-6 md:flex md:justify-end lg:flex lg:justify-end md:ml-30 lg:ml-32">
+                            <div className='my-auto lg:mx-10 lg:mx-12 text-white text-right'>
+                                <h1 class="text-sm md:text-xl lg:text-2xl font-bold font-open-sans">Udah naik kelas 12, tapi masih belum persiapan SBMPTN?</h1>
+                                <p class="text-xs py-4 md:text-base lg:text-xl font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.</p>
                             </div>
-                            <img src="/images/home-sec2-2.svg" alt="sec2-2" className='block ml-auto object-cover'/>
+                            <img src="/images/home-sec2-4.svg" alt="sec2-1" className='w-1/3 mx-auto'/>
                         </div>
-                        <div className='pt-10'>
-                            <div class="p-12 text-left absolute grid grid-1 md:grid-cols-3 lg:grid-cols-4 text-white">
-                                <div></div>
-                                <div className='col-span-2'>
-                                    <h1 class="text-lg lg:text-2xl font-bold font-open-sans">Mau persiapan SBMPTN, tapi waktu udah mepet?</h1>
-                                    <p class="text-xs py-4 lg:text-xl font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.</p>
-                                </div>
+                        <div style={background7} className="p-9 md:flex md:justify-start lg:flex lg:justify-start md:pr-40 lg:pr-48">
+                            <img src="/images/home-sec2-6.svg" alt="sec2-8" className='w-1/3 mx-auto'/>
+                            <div className='my-auto md:mx-10 lg:mx-12 text-white'>
+                                <h1 class="text-sm md:text-xl lg:text-2xl font-bold font-open-sans">Mau persiapan SBMPTN, tapi waktu udah mepet?</h1>
+                                <p class="text-xs py-4 md:text-base lg:text-xl font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sit pharetra augue senectus facilisi. Sit et, tristique posuere iaculis amet. Adipiscing arcu mattis aenean elit dictum risus diam.</p>
                             </div>
-                            <img src="/images/home-sec2-3.svg" alt="sec2-3" className='object-cover'/>
                         </div>
                     </div>
 
-                    <div class="p-3 lg:pl-28 lg:pr-16 lg:py-16" style={background1}>
+                    <div class="p-10 py-20 lg:pl-28 lg:pr-16 lg:py-16" style={background1}>
                         <div className='lg:flex'>
                             <div className='lg:flex-auto lg:w-2/5 mx-2'>
                                 <div>
@@ -128,24 +141,25 @@ export class Home extends Component {
                                     <p className='text-lg font-roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt officiis necessitatibus suscipit molestiae veniam dicta culpa officia nam rerum, alias deleniti unde nulla non ratione accusantium totam veritatis animi?</p>
                                 </div>
                             </div>
-                            <div className='lg:flex-auto lg:w-96 bg-white mx-4 rounded-lg px-12 py-8 drop-shadow-2xl' style={background2}>
+                            <div className='my-4 lg:flex-auto lg:w-96 bg-white mx-4 rounded-lg px-12 py-8 drop-shadow-2xl' style={background2}>
                                 <h2 className='text-2xl font-open-sans font-bold text-oren1 text-center lg:pb-4'>All In One<br />Persiapan KSN</h2>
-                                <ul className='list-disc text-lg pb-8'>
+                                <ul className='list-disc text-lg mb-24'>
                                     <li>Try out</li>
                                     <li>Rangkuman materi</li>
                                     <li>PDF Pembahasan try out</li>
                                     <li>Video pembahasan try out</li>
                                     <li>Perangkingan secara nasional</li>
                                 </ul>
-                                <Link to="/" className='absolute bottom-8 inset-x-1/4'>
-                                    <button type="button" class="w-auto bg-oren3 rounded-lg hover:bg-yellow-700 mt-2 drop-shadow-xl">
+                                
+                                <button type="button" class="w-auto bg-oren3 rounded-lg hover:bg-yellow-700 mt-2 drop-shadow-xl absolute bottom-8 inset-x-1/4">
+                                    <Link to="/">
                                         <p class="text-lg px-4 py-2 text-white">Coba Sekarang</p>
-                                    </button>
-                                </Link>
+                                    </Link>
+                                </button>
                             </div>
-                            <div className='lg:flex-auto lg:w-96 bg-white mx-8 rounded-lg px-12 py-8 drop-shadow-2xl' style={background3}>
+                            <div className='my-4 lg:flex-auto lg:w-96 bg-white mx-4 rounded-lg px-12 py-8 drop-shadow-2xl' style={background3}>
                                 <h2 className='text-2xl font-open-sans font-bold text-oren1 text-center lg:pb-4 '>All In One<br />Persiapan SBMPTN</h2>
-                                <ul className='list-disc text-lg'>
+                                <ul className='list-disc text-lg mb-24'>
                                     <li>Try out</li>
                                     <li>Rangkuman materi</li>
                                     <li>Quiz</li>
@@ -155,16 +169,17 @@ export class Home extends Component {
                                     <li>Rekomendasi jurusan/kampus</li>
                                     <li>Virtual class</li>
                                 </ul>
-                                <Link to="/" className='absolute bottom-8 inset-x-1/4'>
-                                    <button type="button" class="w-auto bg-oren3 rounded-lg hover:bg-yellow-700 mt-2 drop-shadow-xl">
+                                <button type="button" class="w-auto bg-oren3 rounded-lg hover:bg-yellow-700 mt-2 drop-shadow-xl absolute bottom-8 inset-x-1/4">
+                                    <Link to="/">
                                         <p class="text-lg px-4 py-2 text-white">Coba Sekarang</p>
-                                    </button>
-                                </Link>
+                                        </Link>
+                                </button>
+                                
                             </div>
                         </div>
                     </div>
 
-                    <div className='py-16'>
+                    <div className='lg:py-16'>
                         <h1 class="text-center text-4xl font-open-sans text-oren1 font-bold lg:pb-8">Kenapa Harus Ocademy?</h1>
                         <div class="grid grid-1 lg:grid-cols-3 p-5 lg:px-36 text-center lg:text-xl">
                             <div class="bg-white rounded-lg mx-12 p-4 drop-shadow-xl my-4">

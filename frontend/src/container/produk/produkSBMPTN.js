@@ -83,13 +83,13 @@ export class ProdukSBMPTN extends Component {
 
                     <div style={background2} class="p-10 grid md:grid-flow-col lg:grid-flow-col text-white">
                         <div className='md:col-start-2 lg:col-start-2'>
-                            <h2 className='text-2xl lg:text-right font-bold font-open-sans'>Rangkuman</h2><br />
+                            <h2 className='text-2xl md:text-right lg:text-right font-bold font-open-sans'>Rangkuman</h2><br />
                         </div>
                         <div class="md:row-span-3 md:col-start-3 md:mx-4 lg:row-span-3 lg:col-start-3 my-auto lg:mx-24">
                             <img src="/images/ksn52.svg" alt="ksn1"/>
                         </div>
                         <div class="md:col-span-2 lg:col-span-2 py-4">
-                            <p className='text-lg lg:text-right lg:pl-80 font-roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed sunt facilis dicta harum sit architecto distinctio, reprehenderit natus corrupti odio, explicabo nesciunt, unde cumque? Quam officiis quisquam odio qui?</p>
+                            <p className='text-lg md:text-right lg:text-right lg:pl-80 font-roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed sunt facilis dicta harum sit architecto distinctio, reprehenderit natus corrupti odio, explicabo nesciunt, unde cumque? Quam officiis quisquam odio qui?</p>
                         </div>
                         <div className='pb-8 md:row-start-3 md:col-span-2 md:flex md:justify-end lg:row-start-3 lg:col-span-2 lg:flex lg:justify-end'>
                             <Carousel showThumbs={false} showStatus={false} showIndicators={false} autoPlay={true} infiniteLoop={true} width={220}>
@@ -130,7 +130,7 @@ export class ProdukSBMPTN extends Component {
                             <img src="/images/sbmptn-sec5-1.svg" alt="sbmptn-sec5-1"/>
                         </div>
                         <div class="md:col-span-2 lg:col-span-2 py-4">
-                            <p className='text-lg lg:text-right lg:pl-80 font-roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed sunt facilis dicta harum sit architecto distinctio, reprehenderit natus corrupti odio, explicabo nesciunt, unde cumque? Quam officiis quisquam odio qui?</p>
+                            <p className='text-lg md:text-right lg:text-right lg:pl-80 font-roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed sunt facilis dicta harum sit architecto distinctio, reprehenderit natus corrupti odio, explicabo nesciunt, unde cumque? Quam officiis quisquam odio qui?</p>
                         </div>
                         <div className='pb-8 md:row-start-3 md:col-span-2 md:flex md:justify-end lg:row-start-3 lg:col-span-2 lg:flex lg:justify-end'>
                             <Carousel showThumbs={false} showStatus={false} showIndicators={false} autoPlay={true} infiniteLoop={true} width={220}>
@@ -169,7 +169,7 @@ export class ProdukSBMPTN extends Component {
                             <img src="/images/sbmptn-sec7-1.svg" alt="sbmptn-sec7-1"/>
                         </div>
                         <div class="md:col-span-2 lg:col-span-2 py-4">
-                            <p className='text-lg lg:text-right lg:pl-80 font-roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed sunt facilis dicta harum sit architecto distinctio, reprehenderit natus corrupti odio, explicabo nesciunt, unde cumque? Quam officiis quisquam odio qui?</p>
+                            <p className='text-lg md:text-right lg:text-right lg:pl-80 font-roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed sunt facilis dicta harum sit architecto distinctio, reprehenderit natus corrupti odio, explicabo nesciunt, unde cumque? Quam officiis quisquam odio qui?</p>
                         </div>
                     </div>
 
@@ -194,7 +194,7 @@ export class ProdukSBMPTN extends Component {
                             <img src="/images/sbmptn-sec9-1.svg" alt="sbmptn-sec9-1"/>
                         </div>
                         <div class="md:col-span-2 lg:col-span-2 py-4">
-                            <p className='text-lg lg:text-right lg:pl-80 font-roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed sunt facilis dicta harum sit architecto distinctio, reprehenderit natus corrupti odio, explicabo nesciunt, unde cumque? Quam officiis quisquam odio qui?</p>
+                            <p className='text-lg md:text-right lg:text-right lg:pl-80 font-roboto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed sunt facilis dicta harum sit architecto distinctio, reprehenderit natus corrupti odio, explicabo nesciunt, unde cumque? Quam officiis quisquam odio qui?</p>
                         </div>
                         <div className='pb-8 md:row-start-3 md:col-span-2 md:flex md:justify-end lg:row-start-3 lg:col-span-2 lg:flex lg:justify-end'>
                             <div>

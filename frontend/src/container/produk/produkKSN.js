@@ -160,7 +160,7 @@ export class ProdukKSN extends Component {
                         </div>
                     </div>
 
-                    <div style={background4} >
+                    <div style={background4} className='px-10'>
                         <div>
                             <img src="/images/ksn81.svg" alt="ksn81" class="float-left p-8 lg:py-16 lg:p-32"/>
                             <div class="p-10 pb-16 leading-7">
