@@ -3,21 +3,21 @@ import React, { Component } from 'react';
 const background1={
     backgroundImage: "url('/images/about11.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
 };
 
 const background2={
     backgroundImage: 
     "url('/images/about21.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
 };
 
 const background3={
     backgroundImage: 
     "url('/images/about3.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
 };
 
 export class About extends Component {

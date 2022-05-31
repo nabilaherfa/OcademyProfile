@@ -4,7 +4,7 @@ const myStyle={
     backgroundImage: 
     "url('/images/register-circle.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
 };
 
 export class Register extends Component {

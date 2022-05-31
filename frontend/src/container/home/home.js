@@ -7,28 +7,28 @@ const background1={
     backgroundImage: 
     "url('/images/home-sec3-1.svg')",
     backgroundRepeat: 'yes',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
 };
 
 const background2={
     backgroundImage: 
     "url('/images/home-sec3-3.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
 };
 
 const background3={
     backgroundImage: 
     "url('/images/home-sec3-4.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
 };
 
 const background4={
     backgroundImage: 
     "url('/images/home-sec5-1.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
 };
 
 export class Home extends Component {

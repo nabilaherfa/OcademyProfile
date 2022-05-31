@@ -4,7 +4,7 @@ const background1={
     backgroundImage: 
     "url('/images/karir52.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
 };
 
 export class Karir extends Component {
