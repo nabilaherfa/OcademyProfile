@@ -173,7 +173,7 @@ export class ProdukSBMPTN extends Component {
                         </div>
                     </div>
 
-                    <div style={background3} className='px-10'>
+                    <div style={background3} className='px-10 py-20'>
                         <div>
                             <img src="/images/sbmptn-sec8-1.svg" alt="sbmptn-sec8-1" class="float-left p-8 lg:py-16 lg:p-32"/>
                             <div class="p-10 pb-16 leading-7">
@@ -217,7 +217,7 @@ export class ProdukSBMPTN extends Component {
                                 <div class="flex-grow border-t border-oren1"></div>
                             </div>
                             <p className='text-xl font-roboto'>Dapatkan promo terbaik bulan ini hanya dengan XXXX</p>
-                            <button type="button" class="w-40 bg-oren3 rounded-lg hover:text-white focus:outline-none m-5 mx-auto grid justify-items-center">
+                            <button type="button" class="w-40 bg-oren3 rounded-lg hover:bg-yellow-700 focus:outline-none m-5 mx-auto grid justify-items-center">
                                 <Link to="/">
                                     <p class="text-lg px-4 py-2 text-white font-roboto ">Coba Sekarang</p>
                                 </Link>

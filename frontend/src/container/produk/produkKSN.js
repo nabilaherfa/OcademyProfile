@@ -185,7 +185,7 @@ export class ProdukKSN extends Component {
                                 <div class="flex-grow border-t border-oren1"></div>
                             </div>
                             <p className='text-xl font-roboto'>Dapatkan promo terbaik bulan ini hanya dengan XXXX</p>
-                            <button type="button" class="w-40 bg-oren3 rounded-lg hover:text-white focus:outline-none m-5 mx-auto grid justify-items-center">
+                            <button type="button" class="w-40 bg-oren3 rounded-lg hover:bg-yellow-700 focus:outline-none m-5 mx-auto grid justify-items-center">
                                 <Link to="/">
                                     <p class="text-lg px-4 py-2 text-white font-roboto ">Coba Sekarang</p>
                                 </Link>
