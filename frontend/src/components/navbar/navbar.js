@@ -9,6 +9,12 @@ function classNames(...classes) {
 }
 
 export class Navbar extends Component {
+    myColor(position) {
+        if (window.location.pathname === position) {
+            return "#FF8300";
+        }
+    }
+
     render() {
         return (
             <div className='font-roboto text-navbar text-xl sticky top-0 bg-white drop-shadow-xl z-10'>
@@ -27,14 +33,14 @@ export class Navbar extends Component {
                             </div>
 
                             <Popover.Group as="nav" className="flex justify-end hidden md:flex space-x-10 ">
-                                <a href="/" className="hover:text-oren3">Beranda</a>
-                                <a href="/about" className="hover:text-oren3">Tentang Ocademy</a>
+                                <a href="/" className="hover:text-oren3" style={{color: this.myColor("/")}}>Beranda</a>
+                                <a href="/about" className="hover:text-oren3" style={{color: this.myColor("/about")}}>Tentang Ocademy</a>
                                 <Popover className="relative">
                                     {({ open }) => (
                                         <>
                                             <Popover.Button className={classNames(open, 'group inline-flex items-center hover:text-oren3' )}>
-                                                <span>Produk</span>
-                                                <ChevronDownIcon className={classNames(open, 'ml-2 h-5 w-5 group-hover:text-oren3' )} aria-hidden="true" />
+                                                <span style={{color: this.myColor("/produk-SBMPTN") || this.myColor("/produk-KSN")}}>Produk</span>
+                                                <ChevronDownIcon className={classNames(open, 'ml-2 h-5 w-5 group-hover:text-oren3' )} aria-hidden="true" style={{color: this.myColor("/produk-SBMPTN") || this.myColor("/produk-KSN")}}/>
                                             </Popover.Button>
                                             
                                             <Transition as={Fragment} enter="transition ease-out duration-200" enterFrom="opacity-0 translate-y-1" enterTo="opacity-100 translate-y-0" leave="transition ease-in duration-150" leaveFrom="opacity-100 translate-y-0" leaveTo="opacity-0 translate-y-1" >
@@ -42,10 +48,10 @@ export class Navbar extends Component {
                                                     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                                                         <div className="relative grid gap-6 bg-white py-6 sm:gap-8 sm:p-8">
                                                             <a href="/produk-SBMPTN" className="-m-2 p-3 flex items-start rounded-lg hover:bg-gray-50" >
-                                                                <p className="hover:text-oren3">Pelatihan SBMPTN</p>
+                                                                <p className="hover:text-oren3" style={{color: this.myColor("/produk-SBMPTN")}}>Pelatihan SBMPTN</p>
                                                             </a>
                                                             <a href="/produk-KSN" className="-m-2 p-3 flex items-start rounded-lg hover:bg-gray-50" >
-                                                                <p className="hover:text-oren3">Pelatihan KSN</p>
+                                                                <p className="hover:text-oren3" style={{color: this.myColor("/produk-KSN")}}>Pelatihan KSN</p>
                                                             </a>  
                                                         </div>
                                                     </div>
@@ -54,7 +60,7 @@ export class Navbar extends Component {
                                         </>
                                     )}
                                 </Popover>
-                                <a href="/karir" className="hover:text-oren3">Karir</a>
+                                <a href="/karir" className="hover:text-oren3" style={{color: this.myColor("/karir")}}>Karir</a>
                             </Popover.Group>
                             
                             <div className="hidden md:flex items-center justify-end">
@@ -81,19 +87,19 @@ export class Navbar extends Component {
                                     <div className="mt-6">
                                         <nav className="grid gap-y-8">
                                             <a href="/" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
-                                                <span className="ml-3 text-base hover:text-oren3">Beranda</span>
+                                                <span className="ml-3 text-base hover:text-oren3" style={{color: this.myColor("/")}}>Beranda</span>
                                             </a>
                                             <a href="/about" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
-                                                <span className="ml-3 text-base hover:text-oren3">Tentang Ocademy</span>
+                                                <span className="ml-3 text-base hover:text-oren3" style={{color: this.myColor("/about")}}>Tentang Ocademy</span>
                                             </a>
                                             <a href="/produk-SBMPTN" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
-                                                <span className="ml-3 text-base hover:text-oren3">Pelatihan SBMPTN</span>
+                                                <span className="ml-3 text-base hover:text-oren3" style={{color: this.myColor("/produk-SBMPTN")}}>Pelatihan SBMPTN</span>
                                             </a>
                                             <a href="/produk-KSN" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
-                                                <span className="ml-3 text-base hover:text-oren3">Pelatihan KSN</span>
+                                                <span className="ml-3 text-base hover:text-oren3" style={{color: this.myColor("/produk-KSN")}}>Pelatihan KSN</span>
                                             </a>
                                             <a href="/karir" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
-                                                <span className="ml-3 text-base hover:text-oren3">Karir</span>
+                                                <span className="ml-3 text-base hover:text-oren3" style={{color: this.myColor("/karir")}}>Karir</span>
                                             </a>
                                         </nav>
                                     </div>

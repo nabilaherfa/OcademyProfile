@@ -15,14 +15,16 @@ function App() {
     return (
         <>
             <BrowserRouter>
+                <Navbar />
                 <Routes>
-                    <Route path="/" exact element={<div><Navbar /><Home /><Footer/></div>} />
-                    <Route path="/register" element={<div><Navbar /><Register /><Footer/></div>} />
-                    <Route path="/about" element={<div><Navbar /><About /><Footer/></div>} />
-                    <Route path="/karir" element={<div><Navbar /><Karir /><Footer/></div>} />
-                    <Route path="/produk-SBMPTN" element={<div><Navbar /><ProdukSBMPTN /><Footer/></div>} />
-                    <Route path="/produk-KSN" element={<div><Navbar /><ProdukKSN /><Footer/></div>} />
+                    <Route path="/" exact element={<Home />} />
+                    <Route path="/register" element={<Register />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/karir" element={<Karir />} />
+                    <Route path="/produk-SBMPTN" element={<ProdukSBMPTN />} />
+                    <Route path="/produk-KSN" element={<ProdukKSN />} />
                 </Routes>
+                <Footer/>
             </BrowserRouter>
         </>
     );
