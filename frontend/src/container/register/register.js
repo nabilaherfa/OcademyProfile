@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 import { IconBase } from 'react-icons';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const myStyle={
     backgroundImage: 
@@ -25,7 +27,6 @@ export class Register extends Component {
         }
     }
     
-
     handlerChange = (e) => {
         this.setState({[e.target.name] : e.target.value})
     }
@@ -46,10 +47,17 @@ export class Register extends Component {
 
         // atau cek tutorial: https://www.freecodecamp.org/news/react-and-googlesheets/
 
-
-        await axios.post('https://sheet.best/api/sheets/9914b376-6b82-45d8-8585-025488fd232c', this.state)
+        axios.post('https://sheet.best/api/sheets/9914b376-6b82-45d8-8585-025488fd232c', this.state).then(() => {
+            toast("Berhasil Daftar");
+        });
         
-        window.location = "/";
+        setTimeout(function(){
+            window.location.href = '/';
+        }, 7000);
+    }
+
+    movePage() {
+        window.location.href = '/';
     }
 
     render() {
@@ -106,6 +114,7 @@ export class Register extends Component {
                             <button type="submit" className="w-32 bg-oren3 rounded-lg hover:bg-yellow-700 focus:outline-none m-5 mx-auto grid justify-items-center">
                                 <p className="text-lg py-1 text-white font-roboto ">Daftar</p>
                             </button>
+                            <ToastContainer closeButton={false} onClick={this.movePage}/>
                         </div>
                         <div className="flex justify-center p-3 text-register-subtitle-oren">
                             <p className="text-center">Sudah Punya Akun?<a href='/' className="font-bold"> Login</a></p>

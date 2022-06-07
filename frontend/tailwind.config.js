@@ -21,7 +21,7 @@ module.exports = {
         'navbar': '#053F5C'
       },
       fontFamily: {
-        roboto: ["Roboto"],
+        roboto: ["./public/font/Roboto-Regular.ttf"],
         'open-sans': ["./public/font/OpenSans-Regular.ttf"]
       }
     },
