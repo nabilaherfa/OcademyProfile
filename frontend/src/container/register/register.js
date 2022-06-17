@@ -92,11 +92,12 @@ export class Register extends Component {
                                 <option value={daftar} className="shadow appearance-none border rounded-full w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline">Daftar Apa?</option>
                                 <option name="sbmptn">Pelatihan SBMPTN</option>
                                 <option name="ksn">Pelatihan KSN</option>
-                                <option name="sbmptn-ksn">Pelatihan SBMPTN dan KSN</option>
+                                <option name="ocademy-competition">Ocademy Competition</option>
+                                <option name="tpb">Pelatihan TPB</option>
                             </select>
                         </div>
                         <div className="mb-6">
-                            <label className="block text-lg font-header font-roboto mb-2 text-register-subtitle-oren font-semibold">Asal Sekolah</label>
+                            <label className="block text-lg font-header font-roboto mb-2 text-register-subtitle-oren font-semibold">Asal Sekolah/Institusi</label>
                             <input className="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" name="asal_sekolah" type="text" placeholder="Asal Sekolah" onChange={this.handlerChange} value={asal_sekolah} required/>
                         </div>
                         <div className="inline-block relative mb-6">
@@ -117,7 +118,7 @@ export class Register extends Component {
                             <ToastContainer closeButton={false} onClick={this.movePage}/>
                         </div>
                         <div className="flex justify-center p-3 text-register-subtitle-oren">
-                            <p className="text-center">Sudah Punya Akun?<a href='/' className="font-bold"> Login</a></p>
+                            <p className="text-center">Sudah Punya Akun?<a href='https://ocademyofficial.net/elearning/' className="font-bold"> Login</a></p>
                         </div>
                     </form>
                 </div>

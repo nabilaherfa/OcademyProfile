@@ -19,7 +19,7 @@ export class Footer extends Component {
                                 <a href="/about">Tentang Ocademy</a>
                             </p>
                             <p className="lg:mb-4 text-lg">
-                                <a href="karir">Karir</a>
+                                <a href="/karir">Karir</a>
                             </p>
                         </div>
 
@@ -31,24 +31,30 @@ export class Footer extends Component {
                             <p className="lg:mb-4 text-lg">
                                 <a href="/produk-SBMPTN">Pelatihan SBMPTN</a>
                             </p>
+                            <p className="lg:mb-4 text-lg">
+                                <a href="/produk-OC">Ocademy Competition</a>
+                            </p>
+                            <p className="lg:mb-4 text-lg">
+                                <a href="/produk-TPB">Pelatihan TPB</a>
+                            </p>
                         </div>
 
                         <div className="py-5">
                             <h6 className="font-semibold mb-8 text-xl">Social Media</h6>
                             <div className="flex">
                                 <div>
-                                    <a href="/" className="mr-6">
+                                    <a href="https://www.instagram.com/ocademy.id/" className="mr-6">
                                         <FaInstagram size={30}/>
                                     </a>
-                                    <a href="/" className="mr-6">
+                                    <a href="https://wa.me/6285159932224" className="mr-6">
                                         <FaWhatsapp size={30}/>
                                     </a>
                                 </div>
                                 <div className='px-10'>
-                                    <a href="#!" className="mr-6">
+                                    <a href="https://twitter.com/ocademy_id" className="mr-6">
                                         <FaTwitter size={30}/>
                                     </a>
-                                    <a href="/" className="mr-6">
+                                    <a href="https://www.tiktok.com/@ocademy.id" className="mr-6">
                                         <FaTiktok size={30}/>
                                     </a>
                                 </div>

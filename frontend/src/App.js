@@ -10,6 +10,8 @@ import About from './container/about/about';
 import Karir from './container/karir/karir';
 import ProdukSBMPTN from './container/produk/produkSBMPTN';
 import ProdukKSN from './container/produk/produkKSN';
+import ProdukOC from './container/produk/produkOC';
+import ProdukTPB from './container/produk/produkTPB';
 
 function App() {
     return (
@@ -23,6 +25,8 @@ function App() {
                     <Route path="/karir" element={<Karir />} />
                     <Route path="/produk-SBMPTN" element={<ProdukSBMPTN />} />
                     <Route path="/produk-KSN" element={<ProdukKSN />} />
+                    <Route path="/produk-OC" element={<ProdukOC />} />
+                    <Route path="/produk-TPB" element={<ProdukTPB />} />
                 </Routes>
                 <Footer/>
             </BrowserRouter>

@@ -52,6 +52,12 @@ export class Navbar extends Component {
                                                             </a>
                                                             <a href="/produk-KSN" className="-m-2 p-3 flex items-start rounded-lg hover:bg-gray-50" >
                                                                 <p className="hover:text-oren3" style={{color: this.myColor("/produk-KSN")}}>Pelatihan KSN</p>
+                                                            </a>
+                                                            <a href="/produk-OC" className="-m-2 p-3 flex items-start rounded-lg hover:bg-gray-50" >
+                                                                <p className="hover:text-oren3" style={{color: this.myColor("/produk-SBMPTN")}}>Ocademy Competition</p>
+                                                            </a>
+                                                            <a href="/produk-TPB" className="-m-2 p-3 flex items-start rounded-lg hover:bg-gray-50" >
+                                                                <p className="hover:text-oren3" style={{color: this.myColor("/produk-KSN")}}>Pelatihan TPB</p>
                                                             </a>  
                                                         </div>
                                                     </div>
