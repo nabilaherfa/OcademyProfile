@@ -35,21 +35,24 @@ const background5={
     backgroundImage: 
     "url('/images/home-sec2-1.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
+    marginRight: '10%'
 };
 
 const background6={
     backgroundImage: 
     "url('/images/home-sec2-3.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
+    marginLeft: '10%'
 };
 
 const background7={
     backgroundImage: 
     "url('/images/home-sec2-5.svg')",
     backgroundRepeat: 'no-repeat',
-    backgroundSize: 'auto',
+    backgroundSize: 'cover',
+    marginRight: '10%'
 };
 
 
@@ -111,26 +114,32 @@ export class Home extends Component {
                         </Carousel>
                     </div>
 
-                    <div className="w-auto p-3 lg:p-10 ">
-                        <div style={background5} className="p-9 py-12 flex md:justify-start lg:justify-start md:pr-40 lg:pr-48">
-                            <img src="/images/home-sec2-2.svg" alt="sec2-1" className='w-1/3 mx-auto'/>
-                            <div className='my-auto md:mx-10 lg:mx-12 text-white'>
-                                <h1 className="text-sm md:text-xl lg:text-2xl font-bold font-open-sans">Ngerasa bingung gimana mulai mempersiapkan belajar buat KSN?</h1>
-                                <p className="text-xs py-4 md:text-base lg:text-xl font-roboto">Pernah gak sih kamu udah niat mau ikut Kompetisi Sains Nasional, tapi bingung mau mulai belajar darimana, ga ngerti sama materi-materi KSN, ga sempet ngerangkum materi KSN karena banyak tugas, ujian, dan terdistraksi sama orang lain?</p>
+                    <div className="w-auto p-3 lg:p-10">
+                        <div style={background5} className="md:flex lg:flex md:items-center lg:items-center rounded-3xl px-10 p-5">
+                            <div className='md:w-1/4 lg:w-1/4 md:my-9 lg:my-9'>
+                                <img src="/images/home-sec2-2.svg" alt="sec2-2" className='w-1/2 md:w-full lg:w-full mx-auto'/>
+                            </div>
+                            <div className='lg:w-3/4 text-white'>
+                                <h1 className="text-sm md:text-xl lg:text-2xl text-center md:text-left lg:text-left font-bold font-open-sans">Ngerasa bingung gimana mulai mempersiapkan belajar buat KSN?</h1>
+                                <p className="text-xs py-4 md:text-base lg:text-xl text-justify md:text-left lg:text-left font-roboto">Pernah gak sih kamu udah niat mau ikut Kompetisi Sains Nasional, tapi bingung mau mulai belajar darimana, ga ngerti sama materi-materi KSN, ga sempet ngerangkum materi KSN karena banyak tugas, ujian, dan terdistraksi sama orang lain?</p>
                             </div>
                         </div>
-                        <div style={background6} className="p-9 py-12 mt-6 flex md:justify-end lg:justify-end md:ml-30 lg:ml-32">
-                            <div className='my-auto lg:mx-10 lg:mx-12 text-white text-right'>
-                                <h1 className="text-sm md:text-xl lg:text-2xl font-bold font-open-sans">Udah naik kelas 12, tapi masih belum persiapan SBMPTN?</h1>
-                                <p className="text-xs py-4 md:text-base lg:text-xl font-roboto">Pernah gak sih kamu udah naik kelas 12 tapi masih belum ada belajar buat SBMPTN karena sibuk sama tugas sekolah, ga tau mulai darimana, ga ada temen ngambis, atau ga sempat ikut kursus offline karena harga yang mahal?</p>
+                        <div style={background6} className="md:flex lg:flex md:items-center lg:items-center rounded-3xl px-10 mt-4 p-5">
+                            <div className='lg:w-3/4 text-white'>
+                                <h1 className="text-sm md:text-xl lg:text-2xl text-center md:text-right lg:text-right font-bold font-open-sans">Udah naik kelas 12, tapi masih belum persiapan SBMPTN?</h1>
+                                <p className="text-xs py-4 md:text-base lg:text-xl text-justify md:text-right lg:text-right font-roboto">Pernah gak sih kamu udah naik kelas 12 tapi masih belum ada belajar buat SBMPTN karena sibuk sama tugas sekolah, ga tau mulai darimana, ga ada temen ngambis, atau ga sempat ikut kursus offline karena harga yang mahal?</p>
                             </div>
-                            <img src="/images/home-sec2-4.svg" alt="sec2-1" className='w-1/3 mx-auto'/>
+                            <div className='md:w-1/4 lg:w-1/4 md:my-9 lg:my-9'>
+                                <img src="/images/home-sec2-4.svg" alt="sec2-1" className='w-1/2 md:w-full lg:w-full mx-auto '/>
+                            </div>
                         </div>
-                        <div style={background7} className="p-9 py-16 mt-6 flex md:justify-start lg:justify-start md:pr-40 lg:pr-48">
-                            <img src="/images/home-sec2-6.svg" alt="sec2-8" className='w-1/3 mx-auto'/>
-                            <div className='my-auto md:mx-10 lg:mx-12 text-white'>
-                                <h1 className="text-sm md:text-xl lg:text-2xl font-bold font-open-sans">Lulus ITB, tapi takut gak masuk di jurusan impian?</h1>
-                                <p className="text-xs py-4 md:text-base lg:text-xl font-roboto">Pernah gak sih kamu udah lulus ITB, tapi takut banget ga masuk ke jurusan impian karena takut IPK TPB ga mencukupi untuk masuk ke jurusan impian, atau merasa takut ga lulus mata kuliah Kalkulus, Fisika, Kimia, dan Pengenalan Komputasi? </p>
+                        <div style={background7} className="md:flex lg:flex md:items-center lg:items-center rounded-3xl px-10 p-5">
+                            <div className='md:w-1/4 lg:w-1/4 md:my-9 lg:my-9'>
+                                <img src="/images/home-sec2-6.svg" alt="sec2-6" className='w-1/2 md:w-full lg:w-full mx-auto'/>
+                            </div>
+                            <div className='lg:w-3/4 text-white'>
+                                <h1 className="text-sm md:text-xl lg:text-2xl text-center md:text-left lg:text-left font-bold font-open-sans">Lulus ITB, tapi takut gak masuk di jurusan impian?</h1>
+                                <p className="text-xs py-4 md:text-base lg:text-xl text-justify md:text-left lg:text-left font-roboto">Pernah gak sih kamu udah lulus ITB, tapi takut banget ga masuk ke jurusan impian karena takut IPK TPB ga mencukupi untuk masuk ke jurusan impian, atau merasa takut ga lulus mata kuliah Kalkulus, Fisika, Kimia, dan Pengenalan Komputasi? </p>
                             </div>
                         </div>
                     </div>
@@ -280,3 +289,17 @@ export class Home extends Component {
 }
 
 export default Home;
+
+
+                        {/* <div className="flex my-4 p-5 md:p-0 lg:p-0">
+                            <div className='flex items-center'>
+                                <img src="/images/home-sec2-1.svg" alt="sec2-1" />
+                                <div className='absolute mx-10 flex items-center w-1/2'>
+                                    <img src="/images/home-sec2-2.svg" alt="sec2-2" className='w-auto mx-auto'/>
+                                    <div className='mx-10'>
+                                        <h1 className="text-sm md:text-xl lg:text-2xl font-bold font-open-sans">Ngerasa bingung gimana mulai mempersiapkan belajar buat KSN?</h1>
+                                        <p className="text-xs py-4 md:text-base lg:text-xl font-roboto">Pernah gak sih kamu udah niat mau ikut Kompetisi Sains Nasional, tapi bingung mau mulai belajar darimana, ga ngerti sama materi-materi KSN, ga sempet ngerangkum materi KSN karena banyak tugas, ujian, dan terdistraksi sama orang lain?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> */}
