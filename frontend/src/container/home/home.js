@@ -70,8 +70,8 @@ export class Home extends Component {
                                 </div>
                                 <div className='flex justify-end'>
                                 <button type="button" className="drop-shadow-2xl absolute bottom-12 bg-oren3 rounded-lg hover:bg-yellow-700 mx-8 md:my-3 lg:my-4">
-                                        <Link to="/register">
-                                            <p className="text-xs md:text-lg lg:text-lg px-2 md:px-4 lg:px-4 py-1 md:py-2 lg:py-2 font-roboto">Daftar Sekarang</p>
+                                        <Link to="/produk-SBMPTN">
+                                            <p className="text-xs md:text-lg lg:text-lg px-2 md:px-4 lg:px-4 py-1 md:py-2 lg:py-2 font-roboto">Lihat Sekarang</p>
                                         </Link>
                                     </button>
                                 </div>
@@ -86,8 +86,8 @@ export class Home extends Component {
                                 </div>
                                 <div className='flex justify-end'>
                                     <button type="button" className="drop-shadow-2xl absolute bottom-12 bg-oren3 rounded-lg hover:bg-yellow-700 mx-8 md:my-3 lg:my-4">
-                                        <Link to="/register">
-                                            <p className="text-xs md:text-lg lg:text-lg px-2 md:px-4 lg:px-4 py-1 md:py-2 lg:py-2 font-roboto">Daftar Sekarang</p>
+                                        <Link to="/produk-KSN">
+                                            <p className="text-xs md:text-lg lg:text-lg px-2 md:px-4 lg:px-4 py-1 md:py-2 lg:py-2 font-roboto">Lihat Sekarang</p>
                                         </Link>
                                     </button>
                                 </div>
@@ -102,8 +102,8 @@ export class Home extends Component {
                                 </div>
                                 <div className='flex justify-end'>
                                 <button type="button" className="drop-shadow-2xl absolute bottom-12 bg-oren3 rounded-lg hover:bg-yellow-700 mx-8 md:my-3 lg:my-4">
-                                        <Link to="/register">
-                                            <p className="text-xs md:text-lg lg:text-lg px-2 md:px-4 lg:px-4 py-1 md:py-2 lg:py-2 font-roboto">Daftar Sekarang</p>
+                                        <Link to="/produk-TPB">
+                                            <p className="text-xs md:text-lg lg:text-lg px-2 md:px-4 lg:px-4 py-1 md:py-2 lg:py-2 font-roboto">Lihat Sekarang</p>
                                         </Link>
                                     </button>
                                 </div>

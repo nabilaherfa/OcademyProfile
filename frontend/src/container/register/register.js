@@ -76,10 +76,12 @@ export class Register extends Component {
                         </div>
                         <div className="mb-6">
                             <label className="block text-lg font-header font-roboto mb-2 text-register-subtitle-oren font-semibold">Username</label>
+                            <h1 className="text-gray-700">*Username diawali huruf kecil dan tanpa spasi</h1>
                             <input className="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" name="username" type="text" placeholder="Username" onChange={this.handlerChange} value={username} required/>
                         </div>
                         <div className="mb-6">
                             <label className="block text-lg font-header font-roboto mb-2 text-register-subtitle-oren font-semibold">Password</label>
+                            <h1 className="text-gray-700">*Password tanpa spasi</h1>
                             <input className="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" name="password" type="password" placeholder="Password" onChange={this.handlerChange} value={password} required/>
                         </div>
                         <div className="mb-6">
