@@ -48,7 +48,7 @@ export class ProdukSBMPTN extends Component {
                         <img src="/images/sbmptn-sec1-1.svg" alt="sbmptn-sec1-1" className="object-cover w-full h-full"/>
                         <div div className="px-5 md:px-20 lg:px-24 text-left text-white">
                             <h1 className="w-1/2 text-lg md:py-8 md:text-2xl lg:text-4xl font-bold font-open-sans absolute top-24 lg:top-40">Persiapan SBMPTN</h1>
-                            <p className="w-3/4 lg:w-1/2 md:py-12 text-xs md:text-lg lg:text-xl font-roboto absolute top-32 lg:top-60">Maksimalkan persiapan UTBK kamu bersama Ocademy mulai dari sekarang! Ocademy telah membuka program persiapan UTBK selama 1 tahun yang terdiri dari berbagai produk yang kamu butuhkan! Dapatkan juga promo besar-besaran untuk produk ini. Ingat, slot terbatas!!!  </p>
+                            <p className="w-full pr-10 lg:w-1/2 md:py-12 text-xs md:text-lg lg:text-xl font-roboto absolute top-32 lg:top-60">Maksimalkan persiapan UTBK kamu bersama Ocademy mulai dari sekarang! Ocademy telah membuka program persiapan UTBK selama 1 tahun yang terdiri dari berbagai produk yang kamu butuhkan! Dapatkan juga promo besar-besaran untuk produk ini. Ingat, slot terbatas!!!  </p>
                         </div>
                     </div>
 
